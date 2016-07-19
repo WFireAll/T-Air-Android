@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/tv_regist_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_forget_password"
+        android:layout_alignRight="@+id/btn_login_login"
+        android:textColor="#bfc0c1"
+        android:clickable="true"
+        android:paddingRight="15dp"
+        android:text="@string/registAccount" />
+
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/login_logo"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_login"
+        android:layout_marginTop="16dp"
+        android:textColor="#bfc0c1"
+        android:clickable="true"
+        android:layout_marginLeft="30dp"
+        android:paddingLeft="15dp"
+        android:text="@string/forgetPasswordStr" />
+
+    <com.silenoff.frame.widgets.ClearEditText
+        android:id="@+id/et_login_input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_login_input_number"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_bg"
+        android:drawableRight="@drawable/et_delete_right"
+        android:ems="20"
+        android:textColorHint="#bfc0c1"
+        android:layout_marginRight="30dp"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:layout_marginLeft="30dp"
+        android:hint="@string/inputPasswordStr"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_login_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_login_input_password"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/login_bg"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/loginBtnStr" />
+
+    <com.silenoff.frame.widgets.ClearEditText
+        android:id="@+id/et_login_input_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/iv_login_logo"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/input_bg"
+        android:drawableRight="@drawable/et_delete_right"
+        android:ems="20"
+        android:paddingLeft="15dp"
+        android:hint="@string/inputUsernameStr"
+        android:singleLine="true"
+        android:textColorHint="#bfc0c1" />
+
+    <TextView
+        android:id="@+id/hint_string"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_login_input_number"
+        android:layout_below="@+id/iv_login_logo"
+        android:layout_marginTop="7dip"
+        android:text="@string/hintNothing"
+        android:textColor="#ff0000"
+        android:textSize="12sp" 
+        />
+
+</RelativeLayout>

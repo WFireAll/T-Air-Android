@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:id="@+id/actionbarLayoutId"
+    android:background="@drawable/actionbar_bg">
+    <ImageButton
+        android:id="@+id/menuBtnBack"
+        android:layout_marginLeft="12.0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        />
+    <TextView
+        android:id="@+id/menuTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/registTitle"
+        android:textSize="24sp"
+        android:clickable="true"
+        android:textColor="#ffffff"
+        />
+
+    <ImageButton
+        android:id="@+id/menuFirstBtn"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:textSize="30sp" />
+    
+    <ImageButton
+        android:id="@+id/menuSecondBtn"
+        android:layout_width="36dip"
+        android:layout_height="36dip"
+        android:layout_alignRight="@id/menuFirstBtn"
+        android:layout_marginRight="40dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:textSize="30sp" />
+    
+    
+</RelativeLayout>

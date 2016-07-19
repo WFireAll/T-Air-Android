@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.silenoff.frame.widgets.ClearEditText
+        android:id="@+id/et_regist_input_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/input_bg"
+        android:drawableRight="@drawable/et_delete_right"
+        android:ems="20"
+        android:paddingLeft="15dp"
+        android:hint="@string/inputUsernameStr"
+        android:singleLine="true"
+        android:textColorHint="#bfc0c1" />
+    
+    <com.silenoff.frame.widgets.ClearEditText
+        android:id="@+id/et_regist_input_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_regist_input_number"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_bg"
+        android:drawableRight="@drawable/et_delete_right"
+        android:ems="20"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:hint="@string/inputPasswordStr"
+        android:singleLine="true"
+        android:textColorHint="#bfc0c1" />
+    
+    <com.silenoff.frame.widgets.ClearEditText
+        android:id="@+id/et_regist_input_identifying_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_regist_input_password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/input_bg"
+        android:drawableRight="@drawable/et_delete_right"
+        android:ems="20"
+        android:paddingLeft="15dp"
+        android:hint="@string/registInputIndentifyCode"
+        android:singleLine="true"
+        android:textColorHint="#bfc0c1" />
+
+    <TextView
+        android:id="@+id/tv_get_identifying_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_regist_input_identifying_code"
+        android:layout_alignRight="@id/et_regist_input_password"
+        android:layout_alignTop="@+id/et_regist_input_identifying_code"
+        android:background="#cbcccc"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/getIdentifyingCode"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_regist_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bg"
+        android:layout_alignLeft="@+id/et_regist_input_identifying_code"
+        android:layout_below="@+id/et_regist_input_identifying_code"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#ffffff"
+        android:text="@string/comfirmBtnStr" />
+
+</RelativeLayout>

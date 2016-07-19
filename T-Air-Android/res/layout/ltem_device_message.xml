@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/list_deviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:text="@string/defaultDeviceName" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/list_deviceValue"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/list_deviceValue"
+        android:layout_marginRight="20dp"
+        android:textSize="26sp"
+        android:text="@string/defaultDeviceUnit" />
+
+    <TextView
+        android:id="@+id/list_deviceValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/list_deviceName"
+        android:layout_alignBottom="@+id/list_deviceName"
+        android:layout_centerHorizontal="true"
+        android:text="@string/defaultDeviceValue"
+        android:textColor="#004898"
+        android:textSize="26sp" />
+
+    <View
+        android:id="@+id/devide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/list_deviceName"
+        android:background="#cacbcc" />
+    
+</RelativeLayout>
